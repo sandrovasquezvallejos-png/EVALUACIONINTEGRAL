@@ -192,13 +192,14 @@ body {
 .social li a{    
     padding: 0 10px;
     
-    color:whitesmoke; 
+    color:black; 
     font-size:larger;   
 }
 .card-title{
     text-align: center;
 }
 
+<div class="mb-3">
 
 /*Blog*/
 
