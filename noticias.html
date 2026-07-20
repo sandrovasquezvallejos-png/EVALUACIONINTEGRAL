@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="img/numero1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/numero0.png" alt="logo" height="40px"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                 <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Más</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+
+                            <li><a class="dropdown-item active" href="noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-5 container">
+        <h1 class="text-center mb-5">Noticias y Novedades</h1>
+
+        
+        <div class="g-4 row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <h2 class="h4 mb-3">Secciones Informativas</h2>
+                
+                <ul class="mb-3 nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="todas-tab" data-bs-toggle="tab" data-bs-target="#todas-tab-pane" type="button" role="tab" aria-controls="todas-tab-pane" aria-selected="true"><i class="bi bi-list-task"></i> General (3)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="actualizacion-tab" data-bs-toggle="tab" data-bs-target="#actualizacion-tab-pane" type="button" role="tab" aria-controls="actualizacion-tab-pane" aria-selected="false"><i class="bi bi-check-circle-fill text-success"></i> Actualizaciones (1)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="critico-tab" data-bs-toggle="tab" data-bs-target="#critico-tab-pane" type="button" role="tab" aria-controls="critico-tab-pane" aria-selected="false"><i class="bi bi-exclamation-triangle-fill text-danger"></i> Incidentes (1)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+
+                        <button class="nav-link" id="mantenimiento-tab" data-bs-toggle="tab" data-bs-target="#mantenimiento-tab-pane" type="button" role="tab" aria-controls="mantenimiento-tab-pane" aria-selected="false"><i class="bi bi-gear-fill text-warning"></i> Comunicados (1)</button>
+                    </li>
+                </ul>
+                
+    
+                <div class="tab-content border border-top-0 p-3 rounded-bottom" id="myTabContent">
+                    
+                   
+                    <div class="tab-pane fade show active" id="todas-tab-pane" role="tabpanel" aria-labelledby="todas-tab" tabindex="0">
+                        <h5 class="mb-3">Resumen General</h5>
+
+                        <div class="alert alert-success" role="alert">
+                            <strong>[Éxito]</strong> La versión 5.3.3 de Bootstrap fue implementada correctamente.
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>[Crítico]</strong> Se detectó una demora en la carga de imágenes. Nuestro equipo está revisando el problema.
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                            <strong>[Aviso]</strong> El sistema tendrá mantenimiento programado durante el fin de semana.
+                        </div>
+                    </div>
+
+                    
+                    <div class="tab-pane fade" id="actualizacion-tab-pane" role="tabpanel" aria-labelledby="actualizacion-tab" tabindex="0">
+                        <h5 class="mb-3">Actualizaciones</h5>
+                        <div class="alert alert-success" role="alert">
+                            <strong>Actualización:</strong> La versión 5.3.3 de Bootstrap fue implementada correctamente.
+                        </div>
+                    </div>
+
+                   
+                    <div class="tab-pane fade" id="critico-tab-pane" role="tabpanel" aria-labelledby="critico-tab" tabindex="0">
+                        <h5 class="mb-3">Incidentes Reportados</h5>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Problema Crítico:</strong> Se detectó una demora en la carga de imágenes. Nuestro equipo está revisando el problema.
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="tab-pane fade" id="mantenimiento-tab-pane" role="tabpanel" aria-labelledby="mantenimiento-tab" tabindex="0">
+                        <h5 class="mb-3">Avisos Importantes</h5>
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Mantenimiento:</strong> El sistema tendrá mantenimiento programado durante el fin de semana.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-lg-4">
+                <h2 class="h4 mb-3">Preguntas Frecuentes</h2>
+                
+               
+                <div class="accordion shadow-sm" id="accordionNoticias">
+                    
+                   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuándo será el próximo evento?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                El próximo evento en vivo será el <strong>30 de Noviembre</strong>. Consulta la sección de Blog para más detalles sobre la inscripción.
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Cómo informar un problema en la tienda?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                Utiliza el formulario en la sección de Contacto, seleccionando "Soporte Técnico" como motivo de la consulta.
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Existen nuevas promociones?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                Sí, revisa la sección "Ofertas Destacadas" en la página de Tienda. ¡Tenemos descuentos de hasta el 50% este mes!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="h5 m-0">Evaluación Integral Isil &copy; 2025-II</p>
+        <div class="info">
+            <p class="text-start ">Curso de Diseño y Desarrollo Web</p>
+            <ul class="social">
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#"><i class="bi bi-tiktok"></i></a></i></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

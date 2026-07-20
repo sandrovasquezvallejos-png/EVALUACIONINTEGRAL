@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Formularios</title>
+    <link rel="shortcut icon" href="img/numero1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+           <a class="navbar-brand" href="index.html"><img src="img/numero0.png" alt="logo" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Más</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-5 container">
+        <div class="g-4 row">
+            
+            <div class="col-lg-6 mb-4">
+                <h2>Formulario de Consultas</h2>
+                
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>Importante</strong> Completa este formulario para consultas generales.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <form>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Tu Nombre" required>
+                        <label for="floatingName">Nombre y Apellidos</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Seleccione una opción">
+                            <option selected>Seleccione una opción</option>
+                            <option value="1">Información General</option>
+                            <option value="2">Asistencia Técnica</option>
+                            <option value="3">Información Comercial</option>
+                        </select>
+                        <label for="floatingSelect">Tipo de consulta</label>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Adjuntar archivo (opcional)</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                   
+                    <div class="mb-3">
+                        <label for="customRange1" class="form-label">Valora tu experiencia en el sitio (1-5)</label>
+                        <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Acepto la política de privacidad.
+                        </label>
+                    </div>
+
+                  
+                    <button type="button" class="w-100 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExito">
+                        <i class="bi bi-send-fill"></i> Enviar Consulta
+                    </button>
+                </form>
+            </div>
+
+            
+            <div class="col-lg-6">
+                <!-- Tabla -->
+                <h2>Horario de Atención</h2>
+                <p class="text-muted">Conoce nuestros horarios de atención.</p>
+                <div class="table-responsive mb-4">
+                    <table class="caption-top overflow-hidden rounded-3 table table-hover table-striped table-bordered">
+                        <caption>Horario de atención (GMT-5)</caption>
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Día</th>
+                                <th scope="col">Horario</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lunes - Viernes</td>
+                                <td>10:00 - 17:00</td>
+                                <td class="text-success">Abierto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Sábado</td>
+                                <td>8:00 - 13:00</td>
+                                <td class="text-warning">Medio día</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Domingo</td>
+                                <td>Cerrado</td>
+                                <td class="text-danger">Cerrado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                
+                <h3 class="h4 mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> Nuestra Ubicación</h3>
+                <div class="card shadow-sm">
+                    <div class="card-body p-1">
+                        
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9488.140618010268!2d-122.33441013903462!3d47.62119286765353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015378b86c63b%3A0x8f3d8f8cd399f6b8!2sAmazon!5e1!3m2!1ses-419!2spe!4v1784534244188!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h1 class="modal-title fs-5" id="modalExitoLabel">¡Éxito!</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i> Hemos recibido tu consulta correctamente. Nos pondremos en contacto contigo pronto. (Mensaje de demostración).
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="h5 m-0">Evaluación Integral Isil &copy; 2025-II</p>
+        <div class="info">
+            <p class="text-start ">Curso de Diseño y Desarrollo Web</p>
+            <ul class="social">
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#"><i class="bi bi-tiktok"></i></a></i></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
